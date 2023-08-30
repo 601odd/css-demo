@@ -1,0 +1,42 @@
+#pie{
+  width: 200px;
+  height:200px;
+  border-radius:50%;
+  background-color: yellowgreen;
+  background-image: linear-gradient(to right, transparent 50%, #655 0);
+}
+#pie::before{
+  content:'';
+  display:block;
+  margin-left:50%;
+  height:100%;
+  background-color: red;
+  border-radius: 0 100% 100% 0 / 50%;;
+  background-color: inherit;
+  transform-origin:left;
+  // border: 1px solid #000;
+  // transform:  rotate(36deg);
+  // transform: rotate(.1turn);
+  animation: spin 3s linear infinite, bg 6s step-end infinite;
+}
+@keyframes spin{
+  to{
+    transform: rotate(.5turn);
+  }
+}
+@keyframes bg{
+  50%{
+    background: #655;
+  }
+}
+
+
+
+.pie-pro{
+  width: 200px;
+  height:200px;
+  border-radius:50%;
+  background: conic-gradient(
+    red 20%, #fb3 0, #fb3 30%, yellowgreen 0
+  );
+}
