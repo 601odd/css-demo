@@ -1,4 +1,4 @@
-import boxshow from '../demo/boxshow/BoxShow'
+import boxShadow from '../demo/boxShadow/BoxShadow'
 import navbar from '../demo/navbar/Navbar'
 import pie from '../demo/Pie/pie'
 import shape from '../demo/shape/Shape'
@@ -7,7 +7,7 @@ import { Route, Routes, BrowserRouter as Router, useNavigate } from 'react-route
 import { createElement } from 'react'
 
 const demoList = [
-	{ component: boxshow, path: '/boxshow', name: 'boxshow' },
+	{ component: boxShadow, path: '/boxshow', name: 'boxshow' },
 	{ component: navbar, path: '/navbar', name: 'navbar' },
 	{ component: pie, path: '/pie', name: 'pie' },
 	{ component: shape, path: '/shape', name: 'shape' },
