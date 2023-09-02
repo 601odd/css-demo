@@ -1,5 +1,4 @@
-import React from 'react'
-
+import './boxShow.less'
 export default function BoxShadow() {
-	return <div>BoxShadow</div>
+	return <div className="square"></div>
 }
