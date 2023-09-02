@@ -1,14 +1,10 @@
-import { useState } from 'react'
-import Shape from './demo/shape/Shape.jsx'
-import Navbar from './demo/navbar/Navbar.jsx'
-import Pie from './demo/pie/Pie.jsx'
 import './App.css'
+import RouterConfig from './router/index.jsx'
 
 function App() {
 	return (
 		<>
-			<Pie />
-			{/* <Shape></Shape> */}
+			<RouterConfig />
 		</>
 	)
 }
