@@ -1,0 +1,19 @@
+@keyframes type {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes caret {
+	50% {
+		border-right-color: transparent;
+	}
+}
+.typing {
+	font: bold 200% Consolas, Monaco, monospace;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 15ch;
+	border-right: 0.05em solid;
+	animation: type 3s steps(15), caret 0.5s steps(2) infinite alternate;
+}

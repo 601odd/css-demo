@@ -4,9 +4,10 @@ import pie from '../demo/Pie/pie'
 import shape from '../demo/shape/Shape'
 import glow from '../demo/glow/Glow'
 import position from '../demo/position/Position'
-import elastic from '../demo/animation/Elastic'
-import bounce from '../demo/animation/bounce'
-import loading from '../demo/animation/Loading'
+import elastic from '../demo/animation/elastic/Elastic'
+import bounce from '../demo/animation/bounce/bounce'
+import loading from '../demo/animation/loading/Loading'
+import typing from '../demo/animation/typing/Typing'
 import './demo.less'
 import { Route, Routes, BrowserRouter as Router, useNavigate } from 'react-router-dom'
 import { createElement } from 'react'
@@ -21,6 +22,7 @@ const demoList = [
 	{ component: elastic, path: '/elastic', name: 'elastic' },
 	{ component: bounce, path: '/bounce', name: 'bounce' },
 	{ component: loading, path: '/loading', name: 'loading' },
+	{ component: typing, path: '/typing', name: 'typing' },
 ]
 
 export default function RouterConfig() {
