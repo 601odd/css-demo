@@ -8,6 +8,7 @@ import elastic from '../demo/animation/elastic/Elastic'
 import bounce from '../demo/animation/bounce/bounce'
 import loading from '../demo/animation/loading/Loading'
 import typing from '../demo/animation/typing/Typing'
+import layout from '../demo/layout/Layout'
 import './demo.less'
 import { Route, Routes, BrowserRouter as Router, useNavigate } from 'react-router-dom'
 import { createElement } from 'react'
@@ -23,6 +24,7 @@ const demoList = [
 	{ component: bounce, path: '/bounce', name: 'bounce' },
 	{ component: loading, path: '/loading', name: 'loading' },
 	{ component: typing, path: '/typing', name: 'typing' },
+	{ component: layout, path: '/layout', name: 'layout' },
 ]
 
 export default function RouterConfig() {

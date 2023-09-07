@@ -1,0 +1,43 @@
+// .parent {
+// 	display: flex;
+// 	.left {
+// 		flex: 0 200px;
+// 		background-color: red;
+// 	}
+// 	.right {
+// 		flex: 1 0;
+// 		background-color: aliceblue;
+// 	}
+// }
+
+// .parent {
+// 	display: grid;
+// 	grid-template-columns: 200px 1fr;
+// 	.left {
+// 		background-color: red;
+// 	}
+// 	.right {
+// 		background-color: aliceblue;
+// 	}
+// }
+
+// demo2
+// .parent {
+// 	display: flex;
+// 	width: 100vw;
+// 	.demo {
+// 		flex: 1;
+// 		// width: calc(100% / 15);
+// 		background-color: aquamarine;
+// 		border: 1px solid red;
+// 	}
+// }
+
+.parent {
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	gap: 1px;
+	.demo {
+		background-color: aquamarine;
+	}
+}
